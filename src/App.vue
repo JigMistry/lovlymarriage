@@ -81,6 +81,24 @@
           </b-carousel>
         </div>
       </section>
+      <section class="invitation-section section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <div class="invitation-box">
+                            <div class="left-vec"></div>
+                            <div class="right-vec"></div>
+                            <div class="inner">
+                                <h2>Save the Date</h2>
+                                <span>For the wedding of</span>
+                                <h4>Lovelesh &amp; Komal</h4>
+                                <p>Friday 17 January 2020 At 6'O clock PM <br> Ashoka Garden <br>Hasanpur Chowk, Hodal (Palwal), Haryana</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end container -->
+        </section>
     </div>
   </div>
 </template>
@@ -120,11 +138,9 @@ export default {
       this.loader = false;
     }, 5000);
     let self = this;
-    this.countdowninterval = setInterval(function() {
-      // Get today's date and time
+    this.countdowninterval = setInterval(() => {
       now = new Date().getTime();
       distance = self.marriageDate - now;
-      // Time calculations for days, hours, minutes and seconds
       self.cdDays = Math.floor(distance / (1000 * 60 * 60 * 24));
       self.cdHours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       self.cdMins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));

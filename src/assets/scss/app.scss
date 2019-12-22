@@ -94,7 +94,7 @@
           margin-right: auto;
           margin-left: auto;
           .slide-title {
-            margin-top: 25px;
+            margin-top: 80px;
           }
           .wedding-date {
             color: #fff;
@@ -225,5 +225,45 @@
           }
         }
       }  
+    }
+    .section-padding {
+      padding: 90px 0;
+      .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        &:before {
+          display: table;
+          content: " ";
+        }
+        .row {
+          margin-right: -15px;
+          margin-left: -15px;
+          &:before {
+            display: table;
+            content: " ";
+          }
+          .invitation-box {
+            background: #fff;
+            -webkit-box-shadow: 0px 3px 24px 0px rgba(0, 0, 0, 0.06);
+            box-shadow: 0px 3px 24px 0px rgba(0, 0, 0, 0.06);
+            text-align: center;
+            position: relative;
+            max-width: 300px;
+            padding: 50px 40px;
+            margin: 0 auto;
+            &:before {
+              width: calc(100% - 40px);
+              height: calc(100% - 40px);
+              position: absolute;
+              left: 20px;
+              top: 20px;
+              border: 3px solid rgba(178, 201, 211, 0.3);
+              content: ''
+            }
+          }
+        }
+      }
     }
   }
