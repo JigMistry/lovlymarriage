@@ -2,7 +2,6 @@ import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
 
 import App from './App.vue'
-import '@/assets/fonts/Niconne-Regular.ttf'
 
 Vue.config.productionTip = false
 Vue.use(BootstrapVue);
