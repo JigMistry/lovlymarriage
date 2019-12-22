@@ -85,7 +85,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col col-xs-12">
-                        <div class="invitation-box">
+                        <div class="invitation-box" @click="showOnMap()">
                             <div class="left-vec"></div>
                             <div class="right-vec"></div>
                             <div class="inner">
@@ -94,10 +94,35 @@
                                 <h4>Lovelesh &amp; Komal</h4>
                                 <p>Friday 17 January 2020 <br>At 6'O clock PM <br> Ashoka Garden <br>Hasanpur Chowk, Hodal (Palwal), Haryana</p>
                             </div>
+                            <div>
+                              <b-button variant="outline-primary">Show on map</b-button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div> <!-- end container -->
+            </div>
+        </section>
+        <section class="gallery-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                        <div class="section-title">
+                            <h2>Captured Moments</h2>
+                            <p>Recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="wishes-section">
+          <div class="row">
+            <div class="section-title">
+              <h3>Send Wishes</h3>
+            </div>
+            <div class="section-content">
+              
+            </div>
+          </div>
         </section>
     </div>
     <div class="back-to-top" style="display: inline;" v-on:click="onTop()" v-show="backToTop">
@@ -165,6 +190,10 @@ export default {
       } else {
         this.backToTop = false;
       }
+    },
+    showOnMap() {
+      let url = 'http://www.google.com/maps/place/' + 27.8951793 +',' + 77.3742437;
+      let inAppBrowser = window.open(url, '_blank', 'location=yes');
     }
   },
   beforeDestroy() {
