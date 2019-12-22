@@ -1,0 +1,208 @@
+  .preloader {
+      background: #fff;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      z-index: 99999;
+  }
+  .preloader .middle i:first-child {
+    /* -webkit-animation: preloaderAnimation 0.6s infinite alternate; */
+    animation: preloaderAnimation 0.6s infinite alternate;
+}
+.preloader .middle .fi {
+    float: left;
+    margin-right: 8px;
+}
+.preloader .middle i:nth-child(2) {
+    -webkit-animation: preloaderAnimation 0.6s 0.3s infinite alternate;
+    animation: preloaderAnimation 0.6s 0.3s infinite alternate;
+}
+.preloader .middle i:nth-child(3) {
+    -webkit-animation: preloaderAnimation 0.6s 0.6s infinite alternate;
+    animation: preloaderAnimation 0.6s 0.6s infinite alternate;
+}
+.preloader .middle i:last-child {
+    -webkit-animation: preloaderAnimation 0.6s 0.9s infinite alternate;
+    animation: preloaderAnimation 0.6s 0.9s infinite alternate;
+}
+.preloader .middle .fi:last-child {
+    margin-right: 0;
+}
+  #app {
+    font-family: 'Niconne', cursive, 'Avenir', Helvetica, Arial, sans-serif;
+  }
+  .wrapper {
+    .flower_fixed_body {
+      
+    }
+    &:before {
+      content: "";
+      background: url(./assets/flower1.png) center center/100% no-repeat local;
+      width: 250px;
+      height: 184px;
+      position: fixed;
+      left: -100px;
+      bottom: 0;
+      z-index: 1;
+    }
+    &:after {
+      content: "";
+      background: url(./assets/flower2.png) center center/100% no-repeat local;
+      width: 250px;
+      height: 345px;
+      position: fixed;
+      right: -70px;
+      top: 200px;
+      z-index: 1;
+    }
+    .hero-slider {
+      /*width: 100%;*/
+      /*height: calc(100vh - 210px);*/
+      min-height: 650px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      /*position: relative;*/
+      z-index: 0;
+
+      @media (max-width: 767px) {
+        height: 500px;
+        min-height: auto;
+      }
+      .slide-main-text {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-size: cover;
+        background-position: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center;
+        z-index: 10;
+        .container {
+          padding-right: 15px;
+          padding-left: 15px;
+          margin-right: auto;
+          margin-left: auto;
+          .wedding-date {
+            color: #fff;
+            font-weight: 300;
+            font-size: 18px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            display: inline-block;
+            position: relative;
+            letter-spacing: 2px;
+            text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.35);
+            &:before {
+              content: "";
+              background: #fff;
+              width: 35px;
+              height: 1px;
+              position: absolute;
+              left: -50px;
+              top: 13px;
+            }
+            &:after {
+              content: "";
+              background: #fff;
+              width: 35px;
+              height: 1px;
+              position: absolute;
+              right: -50px;
+              top: 13px;
+            }
+          }
+          h2 {
+            font-family: 'Niconne', cursive, "aphroditeslimtextregular";
+            font-size: 80px;
+            font-size: 2.5rem;
+            color: #fff;
+            margin: 0.3em 0 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+          }
+          .wedding-date {
+            margin: 2em 0 3em;
+          }
+          &:before {
+            display: table;
+            content: " ";
+          }
+        }
+      }
+      .img-fluid {
+        height: max-content;
+      }
+    }
+    .header_section {
+      .topbar {
+        background: #fff;
+        text-align: center;
+        padding: 50px 0 30px;
+        border-bottom: 1px solid #efefef;
+        position: relative;
+        z-index: 1;
+        .container {
+          padding-right: 15px;
+          padding-left: 15px;
+          margin-right: auto;
+          margin-left: auto;
+          .site-logo {
+            display: inline-block
+            a{
+                text-decoration: none;
+                -webkit-transition: all 0.2s;
+                -moz-transition: all 0.2s;
+                -o-transition: all 0.2s;
+                -ms-transition: all 0.2s;
+                transition: all 0.2s;
+            }
+            h1 {
+                  font-family: 'Niconne', cursive, "aphroditeslimtextregular";
+                  font-size: 30px;
+                  font-size: 2rem;
+                  margin: -0.12em 0 0.5em;
+                  color: #202a41;
+                  +span {
+                    color: #797979;
+                    font-weight: 300;
+                    font-size: 12px;
+                    font-size: 0.8rem;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    position: relative;
+                    letter-spacing: 2px;
+                    &:before{
+                      content: "";
+                      background: #ece9e9;
+                      width: 35px;
+                      height: 1px;
+                      position: absolute;
+                      left: -50px;
+                      top: 9px;
+                    }
+                    &:after {
+                      content: "";
+                      background: #ece9e9;
+                      width: 35px;
+                      height: 1px;
+                      position: absolute;
+                      right: -50px;
+                      top: 9px;
+                    }
+                  }
+            }
+          }
+        }
+      }  
+    }
+  }
