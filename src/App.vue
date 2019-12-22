@@ -12,7 +12,7 @@
                       <div class="site-logo">
                           <a>
                               <h1>Lovelesh &amp; Komal</h1>
-                              <span>Just Married</span>
+                              <span>Mr. &amp; Mrs.</span>
                           </a>
                       </div>
                   </div>
@@ -100,6 +100,9 @@
             </div> <!-- end container -->
         </section>
     </div>
+    <div class="back-to-top" style="display: inline;" v-on:click="onTop()" v-show="backToTop">
+      <div class="arrow"></div>
+    </div>
   </div>
 </template>
 
@@ -125,6 +128,7 @@ export default {
       cdHours: null,
       cdSecs: null,
       cdMins: null,
+      backToTop: false,
     }
   },
   mounted() {
@@ -146,9 +150,26 @@ export default {
       self.cdMins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       self.cdSecs = Math.floor((distance % (1000 * 60)) / 1000);
     }, 1000);
+    window.addEventListener("scroll", self.windowScrolled);
+  },
+  methods: {
+    onTop() {
+      window.scroll({
+        top: 0,
+        behavior: 'smooth'
+      });
+    },
+    windowScrolled(e) {
+      if(window.scrollY > 250) {
+        this.backToTop = true;
+      } else {
+        this.backToTop = false;
+      }
+    }
   },
   beforeDestroy() {
-    clearInterval(this.countdowninterval)
+    clearInterval(this.countdowninterval);
+    window.removeEventListener('scroll', this.windowScrolled);
   }
 }
 </script>
