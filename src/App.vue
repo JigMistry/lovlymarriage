@@ -92,7 +92,7 @@
                                 <h2>Save the Date</h2>
                                 <span>For the wedding of</span>
                                 <h4>Lovelesh &amp; Komal</h4>
-                                <p>Friday 17 January 2020 At 6'O clock PM <br> Ashoka Garden <br>Hasanpur Chowk, Hodal (Palwal), Haryana</p>
+                                <p>Friday 17 January 2020 <br>At 6'O clock PM <br> Ashoka Garden <br>Hasanpur Chowk, Hodal (Palwal), Haryana</p>
                             </div>
                         </div>
                     </div>
