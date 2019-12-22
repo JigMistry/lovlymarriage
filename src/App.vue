@@ -30,6 +30,24 @@
               <div class="wedding-date">
                   <span>17 Jan 2020</span>
               </div>
+              <div id="clock">
+                <div class="box">
+                  <div>{{cdDays}}</div>
+                  <span>Days</span> 
+                </div>
+                <div class="box">
+                  <div>{{cdHours}}</div> 
+                  <span>Hours</span> 
+                </div>
+                <div class="box">
+                  <div>{{cdMins}}</div> 
+                  <span>Mins</span> 
+                </div>
+                <div class="box">
+                  <div>{{cdSecs}}</div> 
+                  <span>Secs</span> 
+                </div>
+              </div>
             </div>
           </div>
           <b-carousel
@@ -70,21 +88,51 @@
 <script>
 import '@/assets/scss/custom.scss';
 import HeartLoader from '@/components/HeartLoader.vue';
+// import moment from 'moment';
 export default {
   name: 'app',
   components: {
     HeartLoader
   },
+  computed: {
+
+  },
   data() {
     return {
+      marriageDate: new Date("Jan 17, 2020 18:00:00").getTime(),
       slide: true,
       loader: true,
+      countdowninterval: null,
+      cdDays: null,
+      cdHours: null,
+      cdSecs: null,
+      cdMins: null,
     }
   },
   mounted() {
+    let days;
+    let hours;
+    let minutes;
+    let seconds;
+    let distance;
+    let now;
     setTimeout(() => {
       this.loader = false;
     }, 5000);
+    let self = this;
+    this.countdowninterval = setInterval(function() {
+      // Get today's date and time
+      now = new Date().getTime();
+      distance = self.marriageDate - now;
+      // Time calculations for days, hours, minutes and seconds
+      self.cdDays = Math.floor(distance / (1000 * 60 * 60 * 24));
+      self.cdHours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      self.cdMins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      self.cdSecs = Math.floor((distance % (1000 * 60)) / 1000);
+    }, 1000);
+  },
+  beforeDestroy() {
+    clearInterval(this.countdowninterval)
   }
 }
 </script>
