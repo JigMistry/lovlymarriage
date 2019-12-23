@@ -152,6 +152,7 @@ html {
               }
           }
           .box {
+            font-family: 'Niconne', cursive, "aphroditeslimtextregular";
             font-size: 25px;
             color: #ffffff;
             background-color: rgba(178, 201, 211, 0.9);
@@ -221,6 +222,7 @@ html {
                   margin: -0.12em 0 0.5em;
                   color: #202a41;
                   +span {
+                    font-family: 'Niconne', cursive, "aphroditeslimtextregular";
                     color: #797979;
                     font-weight: 600;
                     font-size: 12px;
@@ -286,7 +288,7 @@ html {
             }
             .inner {
               h4 {
-                font-family: 'Niconne', cursive, 'Avenir', Helvetica, Arial, sans-serif;
+                font-family: 'Niconne', cursive, "aphroditeslimtextregular";
               }
             }
             &:before {
@@ -386,7 +388,12 @@ html {
         margin-left: 25px
       }
       .section-title {
-
+        h3 {
+          font-family: 'Niconne', cursive, "aphroditeslimtextregular";
+        }
+        h4 {
+          font-family: 'Niconne', cursive, "aphroditeslimtextregular";
+        }
       }
       .section-content {
         position: relative;
