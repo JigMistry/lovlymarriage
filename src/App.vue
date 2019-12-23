@@ -119,7 +119,8 @@
           <div class="row" >
             <div class="section-title">
               <h3>Love is in the air</h3>
-              <h4>I fall in love, over and over again, with you. <br>Always with you.</h4>
+              <span>I fall in love, over and over again, with you. <br>Always with you.</span>
+              <!-- <h4>I fall in love, over and over again, with you. <br>Always with you.</h4> -->
             </div>
             <div class="section-content">
               <!-- <b-button variant="outline-primary">
