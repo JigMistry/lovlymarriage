@@ -382,6 +382,9 @@ html {
     .wishes-section {
       display: flex;
       justify-content: center;
+      .row {
+        margin-left: 25px
+      }
       .section-title {
 
       }
@@ -397,13 +400,13 @@ html {
           /* left: -12%; */
           -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-          top: 22px;
-          right: -128px;
+          top: -60px;
+          right: -180px;
         }
       }
     }
     .wish-list-section {
-      height: 250px;
+      height: 220px;
     }
   @-webkit-keyframes arrowAnimation {
     0%   {bottom: 30px;}
