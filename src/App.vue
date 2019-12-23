@@ -154,7 +154,7 @@
           </div>
         </section>
         <div class="row footer">
-          <h6>Made with love by Jignesh</h6>
+          <h6>Made with <pre>    </pre> by Jignesh</h6><Heart/>
         </div>
     </div>
     <div class="back-to-top" style="display: inline;" v-on:click="onTop()" v-show="backToTop">
@@ -166,11 +166,13 @@
 <script>
 import '@/assets/scss/custom.scss';
 import HeartLoader from '@/components/HeartLoader.vue';
+import Heart from '@/components/Heart.vue';
 // import moment from 'moment';
 export default {
   name: 'app',
   components: {
-    HeartLoader
+    HeartLoader,
+    Heart,
   },
   computed: {
 
