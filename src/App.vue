@@ -119,7 +119,7 @@
           <div class="row" >
             <div class="section-title">
               <h3>Love is in the air</h3>
-              <span>I fall in love, over and over again, with you. <br>Always with you.</span>
+              <h6>I fall in love, over and over again, with you. <br>Always with you.</h6>
               <!-- <h4>I fall in love, over and over again, with you. <br>Always with you.</h4> -->
             </div>
             <div class="section-content">
@@ -136,7 +136,7 @@
           </div>
         </section>
         <div class="row footer">
-          <span>Made with love by Jignesh</span>
+          <h6>Made with love by Jignesh</h6>
         </div>
     </div>
     <div class="back-to-top" style="display: inline;" v-on:click="onTop()" v-show="backToTop">

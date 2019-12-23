@@ -391,7 +391,7 @@ html {
         h3 {
           font-family: 'Niconne', cursive, "aphroditeslimtextregular";
         }
-        span {
+        h6 {
           font-family: 'Niconne', cursive, "aphroditeslimtextregular";
         }
       }
@@ -431,4 +431,7 @@ html {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    h6 {
+      font-family: 'Niconne', cursive, "aphroditeslimtextregular";
+    }
   }
