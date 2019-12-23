@@ -119,7 +119,7 @@
           <div class="row" >
             <div class="section-title">
               <h3>Love is in the air</h3>
-              <h6>I fall in love, over and over again, with you. <br>Always with you.</h6>
+              <h5>I fall in love, <br>over and over again, with you. <br>Always with you.</h5>
               <!-- <h4>I fall in love, over and over again, with you. <br>Always with you.</h4> -->
             </div>
             <div class="section-content">
