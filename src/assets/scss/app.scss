@@ -112,6 +112,9 @@ html {
             position: relative;
             letter-spacing: 2px;
             text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.35);
+            span {
+              font-weight: 600;
+            }
             &:before {
               content: "";
               background: #fff;
@@ -219,7 +222,7 @@ html {
                   color: #202a41;
                   +span {
                     color: #797979;
-                    font-weight: 300;
+                    font-weight: 600;
                     font-size: 12px;
                     font-size: 0.8rem;
                     /*text-transform: uppercase;*/
