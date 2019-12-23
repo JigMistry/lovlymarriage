@@ -134,6 +134,9 @@
             
           </div>
         </section>
+        <div class="row footer">
+          <span>Made with love by Jignesh</span>
+        </div>
     </div>
     <div class="back-to-top" style="display: inline;" v-on:click="onTop()" v-show="backToTop">
       <div class="arrow"></div>
