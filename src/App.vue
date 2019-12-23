@@ -109,7 +109,25 @@
                     <div class="col col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
                         <div class="section-title">
                             <h2>Captured Moments</h2>
-                            <p>Recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat</p>
+                            <p>A moment lasts all of a second, but the memory lives on forever.
+                                Here are some beautiful memories from ring ceremony</p>
+                            <b-carousel
+                              id="carousel-1"
+                              :interval="4000"
+                              indicators
+                              background="#ababab"
+                              img-width="1024"
+                              img-height="250"
+                              style="text-shadow: 1px 1px 2px #333;"
+                            >
+                              <b-carousel-slide
+                                :img-src="require('@/assets/fun1.jpg')"
+                              ></b-carousel-slide>
+                              <b-carousel-slide :img-src="require('@/assets/fun2.jpg')">
+                              </b-carousel-slide>
+                              <b-carousel-slide :img-src="require('@/assets/fun3.jpg')"></b-carousel-slide>
+                              <b-carousel-slide :img-src="require('@/assets/fun4.jpg')"></b-carousel-slide>
+                            </b-carousel>
                         </div>
                     </div>
                 </div>
