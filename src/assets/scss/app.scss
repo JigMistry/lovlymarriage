@@ -1,5 +1,8 @@
 html {
   scroll-behavior: smooth;
+  body {
+    font-family: 'Niconne', cursive, 'Avenir', Helvetica, Arial, sans-serif;
+  }
 }
   .preloader {
       background: #fff;
@@ -141,7 +144,7 @@ html {
               height: 100px;
               align-items: center;
               opacity: 0.9;
-              @media (max-width: 767px) {
+              @media (min-width: 767px) {
                 justify-content: center;
               }
           }
@@ -150,7 +153,7 @@ html {
             color: #ffffff;
             background-color: rgba(178, 201, 211, 0.9);
             padding: 10px;
-            @media (max-width: 767px) {
+            @media (min-width: 767px) {
               /*justify-content: center;*/
               margin-right: 5px;
             }
@@ -161,6 +164,7 @@ html {
             &:nth-child(4) {
               border-top-right-radius: 15px;
               border-bottom-right-radius: 15px;
+              margin-right: 0px;
             }
           }
           h2 {
@@ -383,7 +387,7 @@ html {
         margin: 5px auto;
         &:before {
           content: "";
-          background: url(/img/img-3.2b12ad88.png) center center/cover no-repeat local;
+          background: url(./assets/img-3.png) center center/cover no-repeat local;
           width: 124px;
           height: 140px;
           position: absolute;
