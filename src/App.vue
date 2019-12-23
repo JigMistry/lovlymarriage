@@ -60,24 +60,25 @@
             style="text-shadow: 1px 1px 2px #333;"
           >
             <b-carousel-slide
-              img-src="https://picsum.photos/1024/480/?image=52"
+              :img-src="require('@/assets/img2.jpg')"
+              img-height="200"
             ></b-carousel-slide>
-            <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=54">
+            <b-carousel-slide :img-src="require('@/assets/img3.jpg')">
             </b-carousel-slide>
 
-            <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=58"></b-carousel-slide>
+            <b-carousel-slide :img-src="require('@/assets/img4.jpg')"></b-carousel-slide>
 
-            <b-carousel-slide>
+            <!-- <b-carousel-slide>
               <template v-slot:img>
                 <img
                   class="d-block img-fluid w-100"
                   width="1024"
-                  height="480"
-                  src="https://picsum.photos/1024/480/?image=55"
+                  height="240"
+                  src="@/assets/img4.jpg"
                   alt="image slot"
                 >
               </template>
-            </b-carousel-slide>
+            </b-carousel-slide> -->
           </b-carousel>
         </div>
       </section>
@@ -85,7 +86,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col col-xs-12">
-                        <div class="invitation-box" @click="showOnMap()">
+                        <div class="invitation-box" @click="showOnMap">
                             <div class="left-vec"></div>
                             <div class="right-vec"></div>
                             <div class="inner">
@@ -94,8 +95,8 @@
                                 <h4>Lovelesh &amp; Komal</h4>
                                 <p>Friday 17 January 2020 <br>At 6'O clock PM <br> Ashoka Garden <br>Hasanpur Chowk, Hodal (Palwal), Haryana</p>
                             </div>
-                            <div>
-                              <b-button variant="outline-primary">Show on map</b-button>
+                            <div @click="showOnMap">
+                              <b-button variant="outline-primary" @click="showOnMap">Show on map</b-button>
                             </div>
                         </div>
                     </div>
@@ -120,8 +121,15 @@
               <h3>Send Wishes</h3>
             </div>
             <div class="section-content">
-              
+              <!-- <b-button variant="outline-primary">
+                Write
+              </b-button> -->
             </div>
+          </div>
+        </section>
+        <section>
+          <div class="wish-list-section">
+            
           </div>
         </section>
     </div>
@@ -191,8 +199,9 @@ export default {
         this.backToTop = false;
       }
     },
-    showOnMap() {
-      let url = 'http://www.google.com/maps/place/' + 27.8951793 +',' + 77.3742437;
+    showOnMap(e) {
+      e.stopPropagation();
+      let url = `https://www.google.com/maps/place/Ashoka+Garden/@27.8951793,77.3742437,15z/data=!4m5!3m4!1s0x0:0x84fdf2e7bb6461a!8m2!3d27.8951793!4d77.3742437`
       let inAppBrowser = window.open(url, '_blank', 'location=yes');
     }
   },

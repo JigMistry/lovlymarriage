@@ -1,7 +1,7 @@
 html {
   scroll-behavior: smooth;
   body {
-    font-family: 'Niconne', cursive, 'Avenir', Helvetica, Arial, sans-serif;
+    font-family: 'Niconne', cursive, 'Avenir', Helvetica, Arial, sans-serif !important;
   }
 }
   .preloader {
@@ -399,6 +399,9 @@ html {
         }
       }
     }
+    .wish-list-section {
+      height: 250px;
+    }
   @-webkit-keyframes arrowAnimation {
     0%   {bottom: 30px;}
     100% {bottom:20px;}
@@ -406,4 +409,7 @@ html {
   @keyframes arrowAnimation {
     0%   {bottom: 30px;}
     100% {bottom:20px;}
+  }
+  .wrapper .hero-slider .img-fluid {
+    height: 414px !important;
   }
