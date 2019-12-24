@@ -109,8 +109,8 @@
                     <div class="col col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
                         <div class="section-title">
                             <h2>Captured Moments</h2>
-                            <p>A moment lasts all of a second, but the memory lives on forever.
-                                Here are some beautiful memories from ring ceremony</p>
+                            <h5>A moment lasts all of a second, but the memory lives on forever.
+                                Here are some beautiful memories from ring ceremony</h5>
                             <b-carousel
                               id="carousel-1"
                               :interval="4000"
