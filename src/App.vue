@@ -84,7 +84,7 @@
       </section>
       <section class="invitation-section section-padding">
             <div class="container">
-                <div class="row">
+                <div class="row" @click="showOnMap">
                     <div class="col col-xs-12">
                         <div class="invitation-box" @click="showOnMap">
                             <div class="left-vec"></div>
