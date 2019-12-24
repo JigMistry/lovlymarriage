@@ -1,6 +1,25 @@
 <template>
-	<div class="heart"></div>
+	<div class="heart" ref="heartSec"></div>
 </template>
+<script>
+	export default {
+		data() {
+			return {
+
+			}
+		},
+		methods: {
+
+		},
+		mounted() {
+			// console.log('heartSec', this.$refs['heartSec'])
+			// setInterval(() => {
+			// 	console.log('Interval called')
+			// 	this.$refs['heartSec'].click()
+			// }, 5000);
+		}
+	}
+</script>
 <style scoped>
 	.heart {
 	  width: 100px;
