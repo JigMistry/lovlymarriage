@@ -5,20 +5,22 @@
 	export default {
 		data() {
 			return {
-
+				heartInterval: null,
 			}
 		},
 		methods: {
 
 		},
 		mounted() {
-			// console.log('heartSec', this.$refs['heartSec'])
-			setInterval(() => {
+			this.heartInterval = setInterval(() => {
 				document.querySelector('.heart').classList.remove('animationClass')
 				setTimeout(() => {
 					document.querySelector('.heart').classList.add('animationClass')
 				}, 1500)				
 			}, 3500);
+		},
+		beforeDestroy() {
+			clearInterval(this.heartInterval);
 		}
 	}
 </script>
