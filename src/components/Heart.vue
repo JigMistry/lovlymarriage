@@ -13,10 +13,12 @@
 		},
 		mounted() {
 			// console.log('heartSec', this.$refs['heartSec'])
-			// setInterval(() => {
-			// 	console.log('Interval called')
-			// 	this.$refs['heartSec'].click()
-			// }, 5000);
+			setInterval(() => {
+				document.querySelector('.heart').classList.remove('animationClass')
+				setTimeout(() => {
+					document.querySelector('.heart').classList.add('animationClass')
+				}, 1500)				
+			}, 3500);
 		}
 	}
 </script>
@@ -34,8 +36,11 @@
 	  animation: fave-heart 1s steps(28);
 	}
 	.heart:hover {
-	  background-position: -2800px 0;
-	  transition: background 1s steps(28);
+	  
+	}
+	.animationClass {
+		background-position: -2800px 0;
+	  	transition: background 1s steps(28);
 	}
 	@keyframes fave-heart {
 	  0% {
